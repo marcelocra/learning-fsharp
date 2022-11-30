@@ -1,5 +1,7 @@
 {
   "name": "Existing Dockerfile",
   "context": "..",
-  "dockerFile": "../Dockerfile.dev"
+  "dockerFile": "../Dockerfile.dev",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/personal/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/workspaces/personal/${localWorkspaceFolderBasename}"
 }
